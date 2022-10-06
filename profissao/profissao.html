@@ -1,0 +1,67 @@
+<div class="container">
+    <div class="bairros">
+        <div class="barra-de-pesquisa row justify-content-center">
+            <form class="form-inline">
+                <img class="icone-procurar" src="/comum/img/icone-procurar.png" alt="Pesquisar">
+                <input class="campo-de-pesquisa form-control" type="text" placeholder="Pesquisar por profissões" ng-model="busca">
+                <button class="btn-apagar" data-toggle="modal" data-target="#nova-profissao-modal"><img class="icone-adicionar" src="/comum/img/icone-adicionar.png" alt="Adicionar"></button>
+            </form>
+        </div>
+        <div class="row justify-content-center">
+            <table class="table">
+                <thead>
+                    <th><a href="" ng-click="ordenarPor('id')">Código</a></th>
+                    <th><a href="" ng-click="ordenarPor('nome')">Nome</a></th>
+                    <th><a href="" ng-click="ordenarPor('salario')">Salário</a></th>
+                    <th></th>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="profissao in profissoes | filter: {nome: busca} | orderBy: criterioDeOrdenacao:direcao">
+                        <td>{{::profissao.id}}</td>
+                        <td>{{::profissao.nome}}</td>
+                        <td>R$ {{::profissao.salario}}</td>
+                        <td>
+                            <a href="#!alterar-profissao/{{profissao.id}}"><button class="btn-editar"><img class="icone-editar" src="/comum/img/icone-edicao.png" alt="Editar"></button></a>
+                            <button class="btn-apagar"><img class="icone-apagar" src="/comum/img/icone-lixeira.png" alt="Apagar" ng-click="apagarProfissao(profissao)"></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div> 
+
+<div class="card-deck">
+    <div class="cards row justify-content-center">
+        <!-- Nova Pessoa Modal -->
+        <div class="modal fade" id="nova-profissao-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cadastrar nova profissão</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form name="profissoesFormulario">
+                            <div class="form-group">
+                                <label>Nome</label>
+                                <input type="text" class="form-control" id="nome-nova-profissao"  placeholder="Digite o nome da profissão" ng-model="profissao.nome" name="nome" ng-required="true">
+                                <small ng-show="profissoesFormulario.nome.$error.required && profissoesFormulario.nome.$dirty" class="aviso-nome">O campo nome deve ser preenchido.</small>
+                            </div>
+                            <div class="form-group">
+                                <label>Salário</label>
+                                <input type="number" class="form-control" id="salario" placeholder="Digite o valor do salário" ng-model="profissao.salario" name="salario" ng-required="true">
+                                <small ng-show="profissoesFormulario.salario.$error.required && profissoesFormulario.salario.$dirty" class="aviso-nome">O campo salário deve ser preenchido.</small>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-leia-mais" data-dismiss="modal" ng-disabled="profissoesFormulario.$invalid" ng-click="adicionarProfissao(profissao)">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
