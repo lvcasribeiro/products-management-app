@@ -1,0 +1,38 @@
+<div class="container alterar-formulario">
+    <div class="row justify-content-center">
+        <form name="enderecoFormulario" class="novo-formulario">
+            <div class="form-group">
+                <label>Rua</label>
+                <input type="text" class="form-control" id="rua-endereco" placeholder="Digite o nome da rua" ng-model="endereco.rua" name="rua" ng-required="true">
+                <small ng-show="enderecoFormulario.rua.$error.required && enderecoFormulario.rua.$dirty" class="aviso-nome">O campo rua deve ser preenchido.</small>
+            </div>
+            <div class="form-group">
+                <label>Número</label>
+                <input type="number" class="form-control" id="numero-endereco" placeholder="Digite o número" ng-model="endereco.numero" name="numero" ng-required="true">
+                <small ng-show="enderecoFormulario.numero.$error.required && enderecoFormulario.numero.$dirty" class="aviso-nome">O campo número deve ser preenchido.</small>
+            </div>
+            <div class="form-group">
+                <label>Complemento</label>
+                <input type="text" class="form-control" id="complemento-endereco" placeholder="Digite o complemento" ng-model="endereco.complemento" name="complemento" ng-required="true">
+                <small ng-show="enderecoFormulario.complemento.$error.required && enderecoFormulario.complemento.$dirty" class="aviso-nome">O campo complemento deve ser preenchido.</small>
+            </div>
+            <div class="form-group">
+                <label>CEP</label>
+                <input type="text" class="form-control" id="cep-endereco" placeholder="Digite o CEP" ng-model="endereco.cep" name="cep" ng-model="bairro.nome" ng-required="true">
+                <small ng-show="enderecoFormulario.cep.$error.required && enderecoFormulario.cep.$dirty" class="aviso-nome">O campo CEP deve ser preenchido.</small>
+            </div>
+            <div class="form-group">
+                <label>Bairro</label>
+                <br>
+                <select class="custom-select" id="bairro-endereco" ng-model="endereco.bairro" ng-options="bairro.nome for bairro in bairros" name="bairro" ng-required="true">
+                    <option value="">-- Selecione --</option>
+                </select>
+                <small ng-show="enderecoFormulario.bairro.$error.required && enderecoFormulario.bairro.$dirty" class="aviso-nome">O campo bairro deve ser preenchido.</small>
+            </div>
+            <div class="row justify-content-center form-group">
+                <button class="btn btn-alterar" ng-disabled="enderecoFormulario.$invalid" ng-click="alterarEndereco(endereco)">Alterar</button>
+                <a href="#!endereco"><button class="btn btn-cancelar">Cancelar</button></a>
+            </div>
+        </form>
+    </div>
+</div>
