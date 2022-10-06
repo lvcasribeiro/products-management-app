@@ -1,0 +1,27 @@
+.logomarca{
+    width: 38px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.barra-de-navecagao {
+    background-color: #33555D;
+}
+
+.nav-item {
+    margin-left: 5px;
+}
+
+.dropdown-menu {
+    background-color: #33555D;
+    border: none;
+}
+
+.dropdown-item {
+    color: #C5C5C5;
+}
+
+.dropdown-item:hover {
+    background-color: #33555D;
+    color: #E9E9E9;
+}

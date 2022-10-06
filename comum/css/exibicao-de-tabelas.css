@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.container {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 80px;
+}
+
+thead {
+    background-color: #6b1650;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+td, th, tr {
+    border: 1px solid #6b1650;
+}
+
+tr {
+    white-space: nowrap;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.btn-editar {
+    background-color: #FFFFFF;
+    border: none;
+}
+
+.btn-editar:hover {
+    cursor: pointer;
+}
+
+.btn-apagar {
+    margin-left: 15px;
+    background-color: #FFFFFF;
+    border: none;
+}
+
+.btn-apagar:hover {
+    cursor: pointer;
+}
+
+.btn-adicionar {
+    margin-left: 15px;
+    background-color: #FFFFFF;
+    border: none;
+}
+
+.btn-adicionar:hover {
+    cursor: pointer;
+}
+
+.barra-de-pesquisa {
+    margin-bottom: 25px;
+}
+
+.campo-de-pesquisa {
+    width: 400px !important;
+}
+
+.icone-procurar {
+    width: 20px;
+    margin-right: 15px;
+}
+
+.icone-editar {
+    width: 20px;
+}
+
+.icone-apagar {
+    width: 20px;
+}
+
+.icone-adicionar {
+    width:30px;
+}
+
+.novo-formulario {
+    width: 400px;
+}
+
+.btn-alterar {
+    color: #FFFFFF;
+    background-color: #81AE86;
+}
+
+.btn-cancelar {
+    margin-left: 15px;
+    color: #FFFFFF;
+    background-color: #D26925;
+}
+
+.alterar-formulario {
+    text-align: left !important;
+}
+
+.required-nome {
+    margin-top: 15px;
+}
+
+.alert {
+    margin-top: 10px;
+    padding: 2px !important;
+    text-align: center !important;
+}
+
+input.ng-dirty.ng-invalid {
+    border-color: #e42214;
+}
+
+select.ng-dirty.ng-invalid {
+    border-color: #e42214;
+}
+
+.aviso-nome {
+    color: #e42214;
+}
+
+.form-check-input {
+    margin-left: 0px;
+}
+
+.form-check-label {
+    margin-left: 18px;
+}
