@@ -1,0 +1,65 @@
+<div class="container">
+    <div class="row justify-content-center barra-de-pesquisa">
+        <form class="form-inline">
+            <img class="icone-procurar" src="/comum/img/icone-procurar.png" alt="Pesquisar">
+            <input class="form-control campo-de-pesquisa" type="text" placeholder="Pesquisar por bairros" ng-model="busca">
+            <button class="btn-adicionar" data-toggle="modal" data-target="#novo-bairro-modal"><img class="icone-adicionar" src="/comum/img/icone-adicionar.png" alt="Adicionar"></button>
+        </form>
+    </div>
+
+    <div class="row justify-content-center tabela-bairros">
+        <table class="table">
+            <thead>
+                <th><a href="" ng-click="ordenarPor('id')">Código</a></th>
+                <th><a href="" ng-click="ordenarPor('nome')">Nome</a></th>
+                <th><a href="" ng-click="ordenarPor('iptu')">Valor do IPTU</a></th>
+                <th></th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="bairro in bairros | filter: {nome: busca} | orderBy: criterioDeOrdenacao:direcao">
+                    <td>{{::bairro.id}}</td>
+                    <td>{{::bairro.nome}}</td>
+                    <td>R$ {{::bairro.iptu}}</td>
+                    <td>
+                        <a href="#!alterar-bairro/{{bairro.id}}"><button class="btn-editar"><img class="icone-editar" src="/comum/img/icone-edicao.png" alt="Editar"></button></a>
+                        <button class="btn-apagar"><img class="icone-apagar" src="/comum/img/icone-lixeira.png" alt="Apagar" ng-click="apagarBairro(bairro)"></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="bairro-formulario">
+    <div class="row justify-content-center">
+        <div class="modal fade" id="novo-bairro-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cadastrar novo bairro</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form name="bairroFormulario">
+                            <div class="form-group">
+                                <label>Nome</label>
+                                <input type="text" class="form-control" id="nome-novo-bairro" placeholder="Digite o nome do bairro" name="nome" ng-model="bairro.nome" ng-required="true">
+                                <small ng-show="bairroFormulario.nome.$error.required && bairroFormulario.nome.$dirty" class="aviso-nome">O campo nome deve ser preenchido.</small>
+                            </div>
+                            <div class="form-group">
+                                <label>Valor do IPTU</label>
+                                <input type="number" class="form-control" name="iptu" placeholder="Digite o valor do IPTU" ng-model="bairro.iptu" ng-required="true">
+                                <small ng-show="bairroFormulario.iptu.$error.required && bairroFormulario.iptu.$dirty" class="aviso-nome">O campo IPTU deve ser preenchido.</small>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-leia-mais" data-dismiss="modal" ng-disabled="bairroFormulario.$invalid" ng-click="adicionarBairro(bairro)">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
