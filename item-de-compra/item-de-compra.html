@@ -1,0 +1,77 @@
+<div class="container">
+    <div class="compras">
+        <div class="barra-de-pesquisa row justify-content-center">
+            <form class="form-inline">
+                <img class="icone-procurar" src="/comum/img/icone-procurar.png" alt="Pesquisar">
+                <input class="campo-de-pesquisa form-control" type="text" placeholder="Pesquisar por itens de compras" ng-model="busca">
+                <button class="btn-adicionar" data-toggle="modal" data-target="#nova-compra-modal"><img class="icone-adicionar" src="/comum/img/icone-adicionar.png" alt="Adicionar"></button>
+            </form>
+        </div>
+        <div class="compras-tabela row justify-content-center">
+            <table class="table">
+                <thead>
+                    <th><a href="" ng-click="ordenarPor('id')">Código</a></th>
+                    <th><a href="" ng-click="ordenarPor('nome')">Nome</a></th>
+                    <th><a href="" ng-click="ordenarPor('valor')">Valor</a></th>
+                    <th>Compra</th>
+                    <th></th>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in itens | filter: {nome: busca} | orderBy: criterioDeOrdenacao:direcao">
+                        <td>{{::item.id}}</td>
+                        <td>{{::item.nome}}</td>
+                        <td>R$ {{::item.valor}}</td>
+                        <td>{{::item.compra.id}}</td>
+                        <td>
+                            <a href="#!alterar-item/{{item.id}}"><button class="btn-editar"><img class="icone-editar" src="/comum/img/icone-edicao.png" alt="Editar"></button></a>
+                            <button class="btn-apagar"><img class="icone-apagar" src="/comum/img/icone-lixeira.png" alt="Apagar" ng-click="apagarItem(item)"></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="card-deck compra-formulario">
+    <div class="cards row justify-content-center">
+        <!-- Novo Compra Modal -->
+        <div class="modal fade" id="nova-compra-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cadastrar novo item</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form name="itensFormulario">
+                            <div class="form-group">
+                                <label>Nome</label>
+                                <input type="text" class="form-control" id="nome" ng-model="item.nome" name="nome" ng-required="true" placeholder="Digite o nome do item">
+                                <small ng-show="itensFormulario.nome.$error.required && itensFormulario.nome.$dirty" class="aviso-nome">O campo nome deve ser preenchido.</small>
+                            </div>
+                            <div class="form-group">
+                                <label>Valor</label>
+                                <input type="number" class="form-control" name="valor" ng-model="item.valor" ng-required="true" placeholder="Digite o valor do item">
+                                <small ng-show="itensFormulario.valor.$error.required && itensFormulario.valor.$dirty" class="aviso-nome">O campo valor deve ser preenchido.</small>
+                            </div>
+                            <div class="form-group">
+                                <label>Compra</label>
+                                <br>
+                                <select class="custom-select" ng-model="item.compra" ng-options="compra.id for compra in compras" ng-required="true" name="compra">
+                                    <option value="">-- Selecione --</option>
+                                </select>
+                                <small ng-show="itensFormulario.compra.$error.required && itensFormulario.compra.$dirty" class="aviso-nome">O campo compra deve ser preenchido.</small>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-leia-mais" data-dismiss="modal" ng-disabled="itensFormulario.$invalid" ng-click="adicionarItem(item)">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

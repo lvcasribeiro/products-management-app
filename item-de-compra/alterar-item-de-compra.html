@@ -1,0 +1,28 @@
+<div class="container alterar-formulario">
+    <div class="row justify-content-center">
+        <form name="itensFormulario" class="novo-formulario" >
+            <div class="form-group">
+                <label>Nome</label>
+                <input type="text" class="form-control" id="nome" ng-model="item.nome" name="nome" ng-required="true" placeholder="Digite o nome do item">
+                <small ng-show="itensFormulario.nome.$error.required && itensFormulario.nome.$dirty" class="aviso-nome">O campo nome deve ser preenchido.</small>
+            </div>
+            <div class="form-group">
+                <label>Valor</label>
+                <input type="number" class="form-control" name="valor" ng-model="item.valor" ng-required="true" placeholder="Digite o valor do item">
+                <small ng-show="itensFormulario.valor.$error.required && itensFormulario.valor.$dirty" class="aviso-nome">O campo valor deve ser preenchido.</small>
+            </div>
+            <div class="form-group">
+                <label>Compra</label>
+                <br>
+                <select class="custom-select" ng-model="item.compra" ng-options="compra.id for compra in compras" ng-required="true" name="compra">
+                    <option value="">-- Selecione --</option>
+                </select>
+                <small ng-show="itensFormulario.compra.$error.required && itensFormulario.compra.$dirty" class="aviso-nome">O campo compra deve ser preenchido.</small>
+            </div>
+            <div class="row justify-content-center form-group">
+                <button class="btn btn-alterar" ng-disabled="itensFormulario.$invalid" ng-click="alterarItem(item)">Alterar</button>
+                <a href="#!item"><button class="btn btn-cancelar">Cancelar</button></a>
+            </div>
+        </form>
+    </div>
+</div>
