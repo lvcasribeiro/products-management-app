@@ -1,0 +1,84 @@
+<div class="container alterar-formulario">
+    <div class="row justify-content-center">
+        <form class="novo-formulario" name="pessoasFormulario">
+            <div class="form-group">
+                <label>Nome</label>
+                <input type="text" class="form-control" id="nome-nova-pessoa"  placeholder="Digite o nome da pessoa" ng-model="pessoa.nome" name="nome" ng-required="true">
+                <small ng-show="pessoasFormulario.nome.$error.required && pessoasFormulario.nome.$dirty" class="aviso-nome">O campo nome deve ser preenchido.</small>
+            </div>
+            <div class="form-group">
+                <label>Data de nascimento</label>
+                <input type="date" class="form-control" id="data-de-nascimento" ng-model="pessoa.nascimento" name="nascimento" ng-required="true">
+                <small ng-show="pessoasFormulario.nascimento.$error.required && pessoasFormulario.nascimento.$dirty" class="aviso-nome">O campo data de nascimento deve ser preenchido.</small>
+            </div>
+            <div class="form-group">
+                <label>Sexo</label>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="radio-feminino" ng-model="pessoa.sexo" value="Feminino" name="sexoRadio" ng-required="true">
+                            <label class="form-check-label" for="radio-feminino">Feminino</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="radio-masculino" ng-model="pessoa.sexo" value="Masculino" name="sexoRadio" ng-required="true">
+                            <label class="form-check-label" for="radio-masculino">Masculino</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Possui deficiência?</label>
+                <br>
+                <input class="form-check-input" type="checkbox" id="possui-deficiencia-check" ng-model="pessoa.necessidades">
+                <label class="form-check-label">Sim</label>
+            </div>
+            <div class="form-group">
+                <label>Altura</label>
+                <input type="number" class="form-control" id="altura" placeholder="Digite a altura em centímetros" ng-model="pessoa.altura" name="altura" ng-required="true">
+                <small ng-show="pessoasFormulario.altura.$error.required && pessoasFormulario.altura.$dirty" class="aviso-nome">O campo altura deve ser preenchido.</small>
+            </div>
+            <div class="form-group">
+                <label>Peso</label>
+                <input type="number" class="form-control" id="peso" placeholder="Digite o peso em quilos" ng-model="pessoa.peso" name="peso" ng-required="true">
+                <small ng-show="pessoasFormulario.peso.$error.required && pessoasFormulario.peso.$dirty" class="aviso-nome">O campo peso deve ser preenchido.</small>
+            </div>
+            <div class="form-group">
+                <label>CPF</label>
+                <input type="text" class="form-control" name="cpf" ng-pattern="/^\d{3}.\d{3}.\d{3}-\d{2}$/" placeholder="Digite o CPF" name="cpf" ng-model="pessoa.CPF" ng-required="true">
+                <small ng-show="pessoasFormulario.cpf.$error.required && pessoasFormulario.cpf.$dirty" class="aviso-nome">O campo CPF deve ser preenchido.</small>
+            </div>
+            <div class="form-group">
+                <label>Tipo de pessoa</label>
+                <br>
+                <select class="custom-select" ng-model="pessoa.tipo" name="tipo" ng-required="true">
+                    <option value="">-- Selecione --</option>
+                    <option value="Física">Física</option>
+                    <option value="Jurídica">Jurídica</option>
+                    <option value="Especial">Especial</option>
+                    <option value="Outros">Outros</option>
+                </select>
+                <small ng-show="pessoasFormulario.tipo.$error.required && pessoasFormulario.tipo.$dirty" class="aviso-nome">O campo tipo de pessoa deve ser preenchido.</small>
+            </div>
+            <div class="form-group">
+                <label>Endereço</label>
+                <br>
+                <select class="custom-select" ng-model="pessoa.endereco" name="endereco" ng-required="true" ng-options="endereco.id + ' - ' + endereco.rua + ' - ' + endereco.numero + ' - ' + endereco.complemento + ' - ' + endereco.bairro.nome for endereco in enderecos">
+                    <option value="">-- Selecione --</option>
+                </select>
+                <small ng-show="pessoasFormulario.endereco.$error.required && pessoasFormulario.endereco.$dirty" class="aviso-nome">O campo endereço deve ser preenchido.</small>
+            </div>
+            <div class="form-group">
+                <label>Profissão</label>
+                <br>
+                <select class="custom-select" ng-model="pessoa.profissao" name="profissao" ng-required="true" ng-options="profissao.nome for profissao in profissoes">
+                    <option value="">-- Selecione --</option>
+                </select>
+                <small ng-show="pessoasFormulario.profissao.$error.required && pessoasFormulario.profissao.$dirty" class="aviso-nome">O campo profissão deve ser preenchido.</small>
+            </div>
+            <div class="row justify-content-center form-group">
+                <button class="btn btn-alterar" ng-disabled="pessoasFormulario.$invalid" ng-click="alterarPessoa(pessoa)">Alterar</button>
+                <a href="#!pessoa"><button class="btn btn-cancelar">Cancelar</button></a>
+            </div>
+        </form>
+    </div>
+</div>
