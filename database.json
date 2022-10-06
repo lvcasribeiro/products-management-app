@@ -1,0 +1,1204 @@
+{
+  "bairro": [
+    {
+      "nome": "Setor Crimeia-Oeste",
+      "iptu": 1100,
+      "id": 1
+    },
+    {
+      "nome": "Setor Aeroporto",
+      "iptu": 1300,
+      "id": 2
+    },
+    {
+      "nome": "Setor Bueno",
+      "iptu": 1700,
+      "id": 3
+    },
+    {
+      "nome": "Setor Marista",
+      "iptu": 1500,
+      "id": 4
+    },
+    {
+      "nome": "Setor Vila-Nova",
+      "iptu": 900,
+      "id": 5
+    },
+    {
+      "nome": "Setor Guanabara",
+      "iptu": 800,
+      "id": 6
+    },
+    {
+      "nome": "Setor Sul",
+      "iptu": 1400,
+      "id": 7
+    },
+    {
+      "nome": "Setor Santa Genoveva",
+      "iptu": 1000,
+      "id": 8
+    },
+    {
+      "nome": "Setor Crimeia-Leste",
+      "iptu": 700,
+      "id": 9
+    },
+    {
+      "nome": "Setor Oeste",
+      "iptu": 1300,
+      "id": 10
+    }
+  ],
+  "endereco": [
+    {
+      "rua": "Rua Santo Antônio",
+      "numero": 208,
+      "complemento": "Quadra 7, Lote 19",
+      "cep": "74563-300",
+      "bairro": {
+        "nome": "Setor Crimeia-Oeste",
+        "iptu": 1100,
+        "id": 1
+      },
+      "id": 1
+    },
+    {
+      "rua": "Rua das Laranjeiras",
+      "numero": 401,
+      "complemento": "Quadra 8, Lote 20",
+      "cep": "76314-846",
+      "bairro": {
+        "nome": "Setor Campinas",
+        "iptu": 1200,
+        "id": 6
+      },
+      "id": 2
+    },
+    {
+      "rua": "Avenida 85",
+      "numero": 1001,
+      "complemento": "Condomínio Serra do Mar",
+      "cep": "74160-010",
+      "bairro": {
+        "nome": "Setor Marista",
+        "iptu": 1500,
+        "id": 4
+      },
+      "id": 3
+    },
+    {
+      "rua": "Avenida Marechal Rondon",
+      "numero": 75,
+      "complemento": "Quadra 10, Lote 22",
+      "cep": "76354-943",
+      "bairro": {
+        "nome": "Setor Crimeia-Oeste",
+        "iptu": 1100,
+        "id": 1
+      },
+      "id": 4
+    },
+    {
+      "rua": "Rua São Domingos",
+      "cep": "69021-035",
+      "numero": 687,
+      "complemento": "Edifício Tarumã",
+      "bairro": {
+        "nome": "Setor Sul",
+        "iptu": 1400,
+        "id": 7
+      },
+      "id": 5
+    },
+    {
+      "complemento": "Quadra 7, Lote 50",
+      "numero": 853,
+      "cep": "57072-074",
+      "bairro": {
+        "nome": "Setor Santa Genoveva",
+        "iptu": 1000,
+        "id": 8
+      },
+      "rua": "Rua Juan Enzo",
+      "id": 6
+    },
+    {
+      "rua": "Passagem Ana Nery",
+      "numero": 467,
+      "cep": "68905-585",
+      "bairro": {
+        "nome": "Setor Bueno",
+        "iptu": 1700,
+        "id": 3
+      },
+      "complemento": "Condomínio Macapá",
+      "id": 7
+    },
+    {
+      "cep": "53230-735",
+      "numero": 906,
+      "rua": "Rua Olinda",
+      "bairro": {
+        "nome": "Setor Vila-Nova",
+        "iptu": 900,
+        "id": 5
+      },
+      "complemento": "Edifício Peixinhos",
+      "id": 8
+    },
+    {
+      "rua": "Rua Elza Eloá Galvão",
+      "cep": "31810-544",
+      "numero": 899,
+      "complemento": "Quadra 12, Lote 91",
+      "bairro": {
+        "nome": "Setor Aeroporto",
+        "iptu": 1300,
+        "id": 2
+      },
+      "id": 9
+    },
+    {
+      "cep": "56510-440",
+      "numero": 512,
+      "rua": "Avenida Castelo Branco",
+      "complemento": "Condomínio São Miguel",
+      "bairro": {
+        "nome": "Setor Sul",
+        "iptu": 1400,
+        "id": 7
+      },
+      "id": 10
+    }
+  ],
+  "profissao": [
+    {
+      "nome": "Desenvolvedor Júnior",
+      "salario": 2500,
+      "id": 1
+    },
+    {
+      "nome": "Professora",
+      "salario": 4500,
+      "id": 2
+    },
+    {
+      "nome": "Advogado",
+      "salario": 2500,
+      "id": 3
+    },
+    {
+      "nome": "Arqueólogo",
+      "salario": 1500,
+      "id": 4
+    },
+    {
+      "nome": "Estagiário",
+      "salario": 1000,
+      "id": 5
+    },
+    {
+      "nome": "Jornalista",
+      "salario": 2500,
+      "id": 6
+    },
+    {
+      "nome": "Engenheiro Civil",
+      "salario": 2000,
+      "id": 7
+    },
+    {
+      "nome": "Físico",
+      "salario": 2200,
+      "id": 8
+    },
+    {
+      "nome": "Designer Gráfico",
+      "salario": 3000,
+      "id": 9
+    },
+    {
+      "nome": "Engenheiro Elétrico",
+      "salario": 2500,
+      "id": 10
+    }
+  ],
+  "pessoa": [
+    {
+      "nome": "Lucas Anderson Ribeiro",
+      "nascimento": "1999-01-06T02:00:00.000Z",
+      "sexo": "Masculino",
+      "altura": 170,
+      "peso": 65,
+      "CPF": "706.569.561-19",
+      "tipo": "Física",
+      "endereco": {
+        "rua": "Rua Santo Antônio",
+        "numero": 208,
+        "complemento": "Quadra 7, Lote 19",
+        "cep": "74563-300",
+        "bairro": {
+          "nome": "Setor Crimeia-Oeste",
+          "iptu": 1100,
+          "id": 1
+        },
+        "id": 1
+      },
+      "profissao": {
+        "nome": "Desenvolvedor Júnior",
+        "salario": 2500,
+        "id": 1
+      },
+      "necessidades": "Não",
+      "id": 1
+    },
+    {
+      "nome": "Gabriella Vaz Braga",
+      "nascimento": "1999-09-29T03:00:00.000Z",
+      "sexo": "Feminino",
+      "altura": 171,
+      "peso": 58,
+      "CPF": "706.569.561-19",
+      "tipo": "Especial",
+      "endereco": {
+        "rua": "Avenida 85",
+        "numero": 1001,
+        "complemento": "Condomínio Serra do Mar",
+        "cep": "74160-010",
+        "bairro": {
+          "nome": "Setor Oeste",
+          "iptu": 1500,
+          "id": 3
+        },
+        "id": 3
+      },
+      "profissao": {
+        "nome": "Jornalista",
+        "salario": 2500,
+        "id": 6
+      },
+      "necessidades": "Sim",
+      "id": 2
+    },
+    {
+      "nome": "Anderson Thales da Paz",
+      "CPF": "275.939.613-46",
+      "peso": 64,
+      "altura": 160,
+      "necessidades": "Sim",
+      "sexo": "Masculino",
+      "nascimento": "1982-11-24T03:00:00.000Z",
+      "tipo": "Física",
+      "endereco": {
+        "rua": "Avenida Marechal Rondon",
+        "numero": 75,
+        "complemento": "Quadra 10, Lote 22",
+        "cep": "76354-943",
+        "bairro": {
+          "nome": "Setor Crimeia-Oeste",
+          "iptu": 1100,
+          "id": 1
+        },
+        "id": 4
+      },
+      "profissao": {
+        "nome": "Designer Gráfico",
+        "salario": 3000,
+        "id": 9
+      },
+      "id": 3
+    },
+    {
+      "nome": "Heitor Ricardo André Drumond",
+      "nascimento": "1997-01-22T02:00:00.000Z",
+      "necessidades": "Sim",
+      "sexo": "Masculino",
+      "altura": 180,
+      "peso": 75,
+      "CPF": "071.534.064-68",
+      "tipo": "Física",
+      "endereco": {
+        "cep": "56510-440",
+        "numero": 512,
+        "rua": "Avenida Castelo Branco",
+        "complemento": "Condomínio São Miguel",
+        "bairro": {
+          "nome": "Setor Sul",
+          "iptu": 1400,
+          "id": 7
+        },
+        "id": 10
+      },
+      "profissao": {
+        "nome": "Engenheiro Elétrico",
+        "salario": 2500,
+        "id": 10
+      },
+      "id": 4
+    },
+    {
+      "nome": "Breno Oliver Galvão",
+      "nascimento": "1993-01-05T02:00:00.000Z",
+      "sexo": "Masculino",
+      "altura": 178,
+      "peso": 68,
+      "CPF": "930.593.408-03",
+      "tipo": "Jurídica",
+      "endereco": {
+        "cep": "53230-735",
+        "numero": 906,
+        "rua": "Rua Olinda",
+        "bairro": {
+          "nome": "Setor Vila-Nova",
+          "iptu": 900,
+          "id": 5
+        },
+        "complemento": "Edifício Peixinhos",
+        "id": 8
+      },
+      "profissao": {
+        "nome": "Advogado",
+        "salario": 2500,
+        "id": 3
+      },
+      "necessidades": "Não",
+      "id": 5
+    },
+    {
+      "nome": "Débora Cláudia Nunes",
+      "CPF": "620.611.390-60",
+      "tipo": "Física",
+      "endereco": {
+        "rua": "Rua São Domingos",
+        "cep": "69021-035",
+        "numero": 687,
+        "complemento": "Edifício Tarumã",
+        "bairro": {
+          "nome": "Setor Sul",
+          "iptu": 1400,
+          "id": 7
+        },
+        "id": 5
+      },
+      "profissao": {
+        "nome": "Arqueólogo",
+        "salario": 1500,
+        "id": 4
+      },
+      "altura": 164,
+      "peso": 54,
+      "nascimento": "1998-04-30T03:00:00.000Z",
+      "sexo": "Feminino",
+      "necessidades": "Não",
+      "id": 6
+    },
+    {
+      "nome": "Tereza Manuela Mariah da Paz",
+      "nascimento": "1997-07-15T03:00:00.000Z",
+      "sexo": "Feminino",
+      "necessidades": "Sim",
+      "altura": 170,
+      "peso": 49,
+      "CPF": "315.488.196-46",
+      "tipo": "Física",
+      "endereco": {
+        "rua": "Passagem Ana Nery",
+        "numero": 467,
+        "cep": "68905-585",
+        "bairro": {
+          "nome": "Setor Bueno",
+          "iptu": 1700,
+          "id": 3
+        },
+        "complemento": "Condomínio Macapá",
+        "id": 7
+      },
+      "profissao": {
+        "nome": "Professora",
+        "salario": 4500,
+        "id": 2
+      },
+      "id": 7
+    },
+    {
+      "nome": "Pietra Brenda Araújo",
+      "sexo": "Feminino",
+      "nascimento": "1995-10-05T03:00:00.000Z",
+      "peso": 87,
+      "altura": 170,
+      "CPF": "266.220.613-60",
+      "tipo": "Jurídica",
+      "endereco": {
+        "rua": "Rua das Laranjeiras",
+        "numero": 401,
+        "complemento": "Quadra 8, Lote 20",
+        "cep": "76314-846",
+        "bairro": {
+          "nome": "Setor Campinas",
+          "iptu": 1200,
+          "id": 6
+        },
+        "id": 2
+      },
+      "profissao": {
+        "nome": "Engenheiro Civil",
+        "salario": 2000,
+        "id": 7
+      },
+      "necessidades": "Sim",
+      "id": 8
+    },
+    {
+      "CPF": "344.854.185-02",
+      "nome": "Isabelly Aurora Gabriela Nogueira",
+      "nascimento": "1998-10-08T03:00:00.000Z",
+      "altura": 164,
+      "peso": 54,
+      "tipo": "Física",
+      "endereco": {
+        "rua": "Rua Elza Eloá Galvão",
+        "cep": "31810-544",
+        "numero": 899,
+        "complemento": "Quadra 12, Lote 91",
+        "bairro": {
+          "nome": "Setor Aeroporto",
+          "iptu": 1300,
+          "id": 2
+        },
+        "id": 9
+      },
+      "profissao": {
+        "nome": "Designer Gráfico",
+        "salario": 3000,
+        "id": 9
+      },
+      "sexo": "Feminino",
+      "necessidades": "Não",
+      "id": 9
+    },
+    {
+      "nome": "Thiago Joaquim Osvaldo Pereira",
+      "nascimento": "1997-10-01T03:00:00.000Z",
+      "sexo": "Masculino",
+      "altura": 170,
+      "peso": 81,
+      "CPF": "981.259.331-40",
+      "tipo": "Jurídica",
+      "endereco": {
+        "complemento": "Quadra 7, Lote 50",
+        "numero": 853,
+        "cep": "57072-074",
+        "bairro": {
+          "nome": "Setor Santa Genoveva",
+          "iptu": 1000,
+          "id": 8
+        },
+        "rua": "Rua Juan Enzo",
+        "id": 6
+      },
+      "profissao": {
+        "nome": "Arqueólogo",
+        "salario": 1500,
+        "id": 4
+      },
+      "necessidades": "Não",
+      "id": 10
+    }
+  ],
+  "compra": [
+    {
+      "valor": 950,
+      "pessoa": {
+        "nome": "Lucas Anderson Ribeiro",
+        "nascimento": "1999-01-06T02:00:00.000Z",
+        "sexo": "Masculino",
+        "altura": 170,
+        "peso": 65,
+        "CPF": "706.569.561-19",
+        "tipo": "Física",
+        "endereco": {
+          "rua": "Rua Santo Antônio",
+          "numero": 208,
+          "complemento": "Quadra 7, Lote 19",
+          "cep": "74563-300",
+          "bairro": {
+            "nome": "Setor Crimeia-Oeste",
+            "iptu": 1100,
+            "id": 1
+          },
+          "id": 1
+        },
+        "profissao": {
+          "nome": "Estagiário",
+          "salario": 1000,
+          "id": 5
+        },
+        "necessidades": "Sim",
+        "id": 1
+      },
+      "id": 1
+    },
+    {
+      "valor": 30,
+      "pessoa": {
+        "nome": "Gabriella Vaz Braga",
+        "nascimento": "1999-09-29T03:00:00.000Z",
+        "sexo": "Feminino",
+        "altura": 171,
+        "peso": 58,
+        "CPF": "706.569.561-19",
+        "tipo": "Especial",
+        "endereco": {
+          "rua": "Avenida 85",
+          "numero": 1001,
+          "complemento": "Condomínio Serra do Mar",
+          "cep": "74160-010",
+          "bairro": {
+            "nome": "Setor Oeste",
+            "iptu": 1500,
+            "id": 3
+          },
+          "id": 3
+        },
+        "profissao": {
+          "nome": "Jornalista",
+          "salario": 2500,
+          "id": 6
+        },
+        "necessidades": "Sim",
+        "id": 2
+      },
+      "id": 2
+    },
+    {
+      "pessoa": {
+        "nome": "Anderson Thales da Paz",
+        "CPF": "275.939.613-46",
+        "peso": 64,
+        "altura": 160,
+        "necessidades": "Sim",
+        "sexo": "Masculino",
+        "nascimento": "1982-11-24T03:00:00.000Z",
+        "tipo": "Física",
+        "endereco": {
+          "rua": "Avenida Marechal Rondon",
+          "numero": 75,
+          "complemento": "Quadra 10, Lote 22",
+          "cep": "76354-943",
+          "bairro": {
+            "nome": "Setor Crimeia-Oeste",
+            "iptu": 1100,
+            "id": 1
+          },
+          "id": 4
+        },
+        "profissao": {
+          "nome": "Designer Gráfico",
+          "salario": 3000,
+          "id": 9
+        },
+        "id": 3
+      },
+      "valor": 350,
+      "id": 3
+    },
+    {
+      "valor": 90,
+      "pessoa": {
+        "nome": "Lucas Anderson Ribeiro",
+        "nascimento": "1999-01-06T02:00:00.000Z",
+        "sexo": "Masculino",
+        "altura": 170,
+        "peso": 65,
+        "CPF": "706.569.561-19",
+        "tipo": "Física",
+        "endereco": {
+          "rua": "Rua Santo Antônio",
+          "numero": 208,
+          "complemento": "Quadra 7, Lote 19",
+          "cep": "74563-300",
+          "bairro": {
+            "nome": "Setor Crimeia-Oeste",
+            "iptu": 1100,
+            "id": 1
+          },
+          "id": 1
+        },
+        "profissao": {
+          "nome": "Desenvolvedor Júnior",
+          "salario": 2500,
+          "id": 1
+        },
+        "necessidades": "Não",
+        "id": 1
+      },
+      "id": 4
+    },
+    {
+      "valor": 250,
+      "pessoa": {
+        "nome": "Gabriella Vaz Braga",
+        "nascimento": "1999-09-29T03:00:00.000Z",
+        "sexo": "Feminino",
+        "altura": 171,
+        "peso": 58,
+        "CPF": "706.569.561-19",
+        "tipo": "Especial",
+        "endereco": {
+          "rua": "Avenida 85",
+          "numero": 1001,
+          "complemento": "Condomínio Serra do Mar",
+          "cep": "74160-010",
+          "bairro": {
+            "nome": "Setor Oeste",
+            "iptu": 1500,
+            "id": 3
+          },
+          "id": 3
+        },
+        "profissao": {
+          "nome": "Jornalista",
+          "salario": 2500,
+          "id": 6
+        },
+        "necessidades": "Sim",
+        "id": 2
+      },
+      "id": 5
+    },
+    {
+      "valor": 75,
+      "pessoa": {
+        "nome": "Lucas Anderson Ribeiro",
+        "nascimento": "1999-01-06T02:00:00.000Z",
+        "sexo": "Masculino",
+        "altura": 170,
+        "peso": 65,
+        "CPF": "706.569.561-19",
+        "tipo": "Física",
+        "endereco": {
+          "rua": "Rua Santo Antônio",
+          "numero": 208,
+          "complemento": "Quadra 7, Lote 19",
+          "cep": "74563-300",
+          "bairro": {
+            "nome": "Setor Crimeia-Oeste",
+            "iptu": 1100,
+            "id": 1
+          },
+          "id": 1
+        },
+        "profissao": {
+          "nome": "Desenvolvedor Júnior",
+          "salario": 2500,
+          "id": 1
+        },
+        "necessidades": "Não",
+        "id": 1
+      },
+      "id": 6
+    },
+    {
+      "valor": 62,
+      "pessoa": {
+        "nome": "Lucas Anderson Ribeiro",
+        "nascimento": "1999-01-06T02:00:00.000Z",
+        "sexo": "Masculino",
+        "altura": 170,
+        "peso": 65,
+        "CPF": "706.569.561-19",
+        "tipo": "Física",
+        "endereco": {
+          "rua": "Rua Santo Antônio",
+          "numero": 208,
+          "complemento": "Quadra 7, Lote 19",
+          "cep": "74563-300",
+          "bairro": {
+            "nome": "Setor Crimeia-Oeste",
+            "iptu": 1100,
+            "id": 1
+          },
+          "id": 1
+        },
+        "profissao": {
+          "nome": "Desenvolvedor Júnior",
+          "salario": 2500,
+          "id": 1
+        },
+        "necessidades": "Não",
+        "id": 1
+      },
+      "id": 7
+    },
+    {
+      "valor": 58,
+      "pessoa": {
+        "nome": "Gabriella Vaz Braga",
+        "nascimento": "1999-09-29T03:00:00.000Z",
+        "sexo": "Feminino",
+        "altura": 171,
+        "peso": 58,
+        "CPF": "706.569.561-19",
+        "tipo": "Especial",
+        "endereco": {
+          "rua": "Avenida 85",
+          "numero": 1001,
+          "complemento": "Condomínio Serra do Mar",
+          "cep": "74160-010",
+          "bairro": {
+            "nome": "Setor Oeste",
+            "iptu": 1500,
+            "id": 3
+          },
+          "id": 3
+        },
+        "profissao": {
+          "nome": "Jornalista",
+          "salario": 2500,
+          "id": 6
+        },
+        "necessidades": "Sim",
+        "id": 2
+      },
+      "id": 8
+    },
+    {
+      "valor": 89,
+      "pessoa": {
+        "nome": "Anderson Thales da Paz",
+        "CPF": "275.939.613-46",
+        "peso": 64,
+        "altura": 160,
+        "necessidades": "Sim",
+        "sexo": "Masculino",
+        "nascimento": "1982-11-24T03:00:00.000Z",
+        "tipo": "Física",
+        "endereco": {
+          "rua": "Avenida Marechal Rondon",
+          "numero": 75,
+          "complemento": "Quadra 10, Lote 22",
+          "cep": "76354-943",
+          "bairro": {
+            "nome": "Setor Crimeia-Oeste",
+            "iptu": 1100,
+            "id": 1
+          },
+          "id": 4
+        },
+        "profissao": {
+          "nome": "Designer Gráfico",
+          "salario": 3000,
+          "id": 9
+        },
+        "id": 3
+      },
+      "id": 9
+    },
+    {
+      "valor": 100,
+      "pessoa": {
+        "nome": "Anderson Thales da Paz",
+        "CPF": "275.939.613-46",
+        "peso": 64,
+        "altura": 160,
+        "necessidades": "Sim",
+        "sexo": "Masculino",
+        "nascimento": "1982-11-24T03:00:00.000Z",
+        "tipo": "Física",
+        "endereco": {
+          "rua": "Avenida Marechal Rondon",
+          "numero": 75,
+          "complemento": "Quadra 10, Lote 22",
+          "cep": "76354-943",
+          "bairro": {
+            "nome": "Setor Crimeia-Oeste",
+            "iptu": 1100,
+            "id": 1
+          },
+          "id": 4
+        },
+        "profissao": {
+          "nome": "Designer Gráfico",
+          "salario": 3000,
+          "id": 9
+        },
+        "id": 3
+      },
+      "id": 10
+    }
+  ],
+  "item": [
+    {
+      "id": 1,
+      "nome": "Monitor AOC",
+      "valor": 150,
+      "compra": {
+        "valor": 950,
+        "pessoa": {
+          "nome": "Lucas Anderson Ribeiro",
+          "nascimento": "1999-01-06T02:00:00.000Z",
+          "sexo": "Masculino",
+          "altura": 170,
+          "peso": 65,
+          "CPF": "706.569.561-19",
+          "tipo": "Física",
+          "endereco": {
+            "rua": "Rua Santo Antônio",
+            "numero": 208,
+            "complemento": "Quadra 7, Lote 19",
+            "cep": "74563-300",
+            "bairro": {
+              "nome": "Setor Crimeia-Oeste",
+              "iptu": 1100,
+              "id": 1
+            },
+            "id": 1
+          },
+          "profissao": {
+            "nome": "Estagiário",
+            "salario": 1000,
+            "id": 5
+          },
+          "necessidades": "Sim",
+          "id": 1
+        },
+        "id": 1
+      }
+    },
+    {
+      "nome": "Quadro 40x60",
+      "valor": 30,
+      "compra": {
+        "valor": 30,
+        "pessoa": {
+          "nome": "Gabriella Vaz Braga",
+          "nascimento": "1999-09-29T03:00:00.000Z",
+          "sexo": "Feminino",
+          "altura": 171,
+          "peso": 58,
+          "CPF": "706.569.561-19",
+          "tipo": "Especial",
+          "endereco": {
+            "rua": "Avenida 85",
+            "numero": 1001,
+            "complemento": "Condomínio Serra do Mar",
+            "cep": "74160-010",
+            "bairro": {
+              "nome": "Setor Oeste",
+              "iptu": 1500,
+              "id": 3
+            },
+            "id": 3
+          },
+          "profissao": {
+            "nome": "Jornalista",
+            "salario": 2500,
+            "id": 6
+          },
+          "necessidades": "Sim",
+          "id": 2
+        },
+        "id": 2
+      },
+      "id": 2
+    },
+    {
+      "nome": "Drone DJI Tello",
+      "valor": 800,
+      "compra": {
+        "valor": 950,
+        "pessoa": {
+          "nome": "Lucas Anderson Ribeiro",
+          "nascimento": "1999-01-06T02:00:00.000Z",
+          "sexo": "Masculino",
+          "altura": 170,
+          "peso": 65,
+          "CPF": "706.569.561-19",
+          "tipo": "Física",
+          "endereco": {
+            "rua": "Rua Santo Antônio",
+            "numero": 208,
+            "complemento": "Quadra 7, Lote 19",
+            "cep": "74563-300",
+            "bairro": {
+              "nome": "Setor Crimeia-Oeste",
+              "iptu": 1100,
+              "id": 1
+            },
+            "id": 1
+          },
+          "profissao": {
+            "nome": "Estagiário",
+            "salario": 1000,
+            "id": 5
+          },
+          "necessidades": "Sim",
+          "id": 1
+        },
+        "id": 1
+      },
+      "id": 3
+    },
+    {
+      "nome": "Teclado HyperX Alloy",
+      "valor": 350,
+      "compra": {
+        "pessoa": {
+          "nome": "Anderson Thales da Paz",
+          "CPF": "275.939.613-46",
+          "peso": 64,
+          "altura": 160,
+          "necessidades": "Sim",
+          "sexo": "Masculino",
+          "nascimento": "1982-11-24T03:00:00.000Z",
+          "tipo": "Física",
+          "endereco": {
+            "rua": "Avenida Marechal Rondon",
+            "numero": 75,
+            "complemento": "Quadra 10, Lote 22",
+            "cep": "76354-943",
+            "bairro": {
+              "nome": "Setor Crimeia-Oeste",
+              "iptu": 1100,
+              "id": 1
+            },
+            "id": 4
+          },
+          "profissao": {
+            "nome": "Designer Gráfico",
+            "salario": 3000,
+            "id": 9
+          },
+          "id": 3
+        },
+        "valor": 350,
+        "id": 3
+      },
+      "id": 4
+    },
+    {
+      "nome": "Capacete para bicicleta",
+      "valor": 90,
+      "compra": {
+        "valor": 90,
+        "pessoa": {
+          "nome": "Lucas Anderson Ribeiro",
+          "nascimento": "1999-01-06T02:00:00.000Z",
+          "sexo": "Masculino",
+          "altura": 170,
+          "peso": 65,
+          "CPF": "706.569.561-19",
+          "tipo": "Física",
+          "endereco": {
+            "rua": "Rua Santo Antônio",
+            "numero": 208,
+            "complemento": "Quadra 7, Lote 19",
+            "cep": "74563-300",
+            "bairro": {
+              "nome": "Setor Crimeia-Oeste",
+              "iptu": 1100,
+              "id": 1
+            },
+            "id": 1
+          },
+          "profissao": {
+            "nome": "Desenvolvedor Júnior",
+            "salario": 2500,
+            "id": 1
+          },
+          "necessidades": "Não",
+          "id": 1
+        },
+        "id": 4
+      },
+      "id": 5
+    },
+    {
+      "nome": "Mochila",
+      "valor": 62,
+      "compra": {
+        "valor": 62,
+        "pessoa": {
+          "nome": "Lucas Anderson Ribeiro",
+          "nascimento": "1999-01-06T02:00:00.000Z",
+          "sexo": "Masculino",
+          "altura": 170,
+          "peso": 65,
+          "CPF": "706.569.561-19",
+          "tipo": "Física",
+          "endereco": {
+            "rua": "Rua Santo Antônio",
+            "numero": 208,
+            "complemento": "Quadra 7, Lote 19",
+            "cep": "74563-300",
+            "bairro": {
+              "nome": "Setor Crimeia-Oeste",
+              "iptu": 1100,
+              "id": 1
+            },
+            "id": 1
+          },
+          "profissao": {
+            "nome": "Desenvolvedor Júnior",
+            "salario": 2500,
+            "id": 1
+          },
+          "necessidades": "Não",
+          "id": 1
+        },
+        "id": 7
+      },
+      "id": 6
+    },
+    {
+      "compra": {
+        "valor": 100,
+        "pessoa": {
+          "nome": "Anderson Thales da Paz",
+          "CPF": "275.939.613-46",
+          "peso": 64,
+          "altura": 160,
+          "necessidades": "Sim",
+          "sexo": "Masculino",
+          "nascimento": "1982-11-24T03:00:00.000Z",
+          "tipo": "Física",
+          "endereco": {
+            "rua": "Avenida Marechal Rondon",
+            "numero": 75,
+            "complemento": "Quadra 10, Lote 22",
+            "cep": "76354-943",
+            "bairro": {
+              "nome": "Setor Crimeia-Oeste",
+              "iptu": 1100,
+              "id": 1
+            },
+            "id": 4
+          },
+          "profissao": {
+            "nome": "Designer Gráfico",
+            "salario": 3000,
+            "id": 9
+          },
+          "id": 3
+        },
+        "id": 10
+      },
+      "valor": 100,
+      "nome": "Barraca para 2 pessoas",
+      "id": 7
+    },
+    {
+      "nome": "Travesseiro",
+      "compra": {
+        "valor": 58,
+        "pessoa": {
+          "nome": "Gabriella Vaz Braga",
+          "nascimento": "1999-09-29T03:00:00.000Z",
+          "sexo": "Feminino",
+          "altura": 171,
+          "peso": 58,
+          "CPF": "706.569.561-19",
+          "tipo": "Especial",
+          "endereco": {
+            "rua": "Avenida 85",
+            "numero": 1001,
+            "complemento": "Condomínio Serra do Mar",
+            "cep": "74160-010",
+            "bairro": {
+              "nome": "Setor Oeste",
+              "iptu": 1500,
+              "id": 3
+            },
+            "id": 3
+          },
+          "profissao": {
+            "nome": "Jornalista",
+            "salario": 2500,
+            "id": 6
+          },
+          "necessidades": "Sim",
+          "id": 2
+        },
+        "id": 8
+      },
+      "valor": 58,
+      "id": 8
+    },
+    {
+      "compra": {
+        "valor": 89,
+        "pessoa": {
+          "nome": "Anderson Thales da Paz",
+          "CPF": "275.939.613-46",
+          "peso": 64,
+          "altura": 160,
+          "necessidades": "Sim",
+          "sexo": "Masculino",
+          "nascimento": "1982-11-24T03:00:00.000Z",
+          "tipo": "Física",
+          "endereco": {
+            "rua": "Avenida Marechal Rondon",
+            "numero": 75,
+            "complemento": "Quadra 10, Lote 22",
+            "cep": "76354-943",
+            "bairro": {
+              "nome": "Setor Crimeia-Oeste",
+              "iptu": 1100,
+              "id": 1
+            },
+            "id": 4
+          },
+          "profissao": {
+            "nome": "Designer Gráfico",
+            "salario": 3000,
+            "id": 9
+          },
+          "id": 3
+        },
+        "id": 9
+      },
+      "valor": 89,
+      "nome": "Fones de ouvido JBL",
+      "id": 9
+    },
+    {
+      "valor": 75,
+      "compra": {
+        "valor": 75,
+        "pessoa": {
+          "nome": "Lucas Anderson Ribeiro",
+          "nascimento": "1999-01-06T02:00:00.000Z",
+          "sexo": "Masculino",
+          "altura": 170,
+          "peso": 65,
+          "CPF": "706.569.561-19",
+          "tipo": "Física",
+          "endereco": {
+            "rua": "Rua Santo Antônio",
+            "numero": 208,
+            "complemento": "Quadra 7, Lote 19",
+            "cep": "74563-300",
+            "bairro": {
+              "nome": "Setor Crimeia-Oeste",
+              "iptu": 1100,
+              "id": 1
+            },
+            "id": 1
+          },
+          "profissao": {
+            "nome": "Desenvolvedor Júnior",
+            "salario": 2500,
+            "id": 1
+          },
+          "necessidades": "Não",
+          "id": 1
+        },
+        "id": 6
+      },
+      "nome": "Caixa para transporte de pets",
+      "id": 10
+    }
+  ]
+}
