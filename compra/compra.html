@@ -1,0 +1,70 @@
+<div class="container">
+    <div class="compras">
+        <div class="barra-de-pesquisa row justify-content-center">
+            <form class="form-inline">
+                <img class="icone-procurar" src="/comum/img/icone-procurar.png" alt="Pesquisar">
+                <input class="campo-de-pesquisa form-control" type="text" placeholder="Pesquisar por compras" ng-model="busca">
+                <button class="btn-adicionar" data-toggle="modal" data-target="#nova-compra-modal"><img class="icone-adicionar" src="/comum/img/icone-adicionar.png" alt="Adicionar"></button>
+            </form>
+        </div>
+        <div class="compras-tabela row justify-content-center">
+            <table class="table">
+                <thead>
+                    <th><a href="" ng-click="ordenarPor('id')">Código</a></th>
+                    <th><a href="" ng-click="ordenarPor('valor')">Valor total</a></th>
+                    <th><a href="" ng-click="ordenarPor('pessoa.id')">Comprador</a></th>
+                    <th></th>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="compra in compras | filter: {pessoa: busca} | orderBy: criterioDeOrdenacao:direcao">
+                        <td>{{::compra.id}}</td>
+                        <td>R$ {{::compra.valor}}</td>
+                        <td>{{::compra.pessoa.id}} - {{::compra.pessoa.nome}}</td>
+                        <td>
+                            <a href="#!alterar-compra/{{compra.id}}"><button class="btn-editar"><img class="icone-editar" src="/comum/img/icone-edicao.png" alt="Editar"></button></a>
+                            <button class="btn-apagar"><img class="icone-apagar" src="/comum/img/icone-lixeira.png" alt="Apagar" ng-click="apagarCompra(compra)"></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="card-deck compra-formulario">
+    <div class="cards row justify-content-center">
+        <!-- Novo Compra Modal -->
+        <div class="modal fade" id="nova-compra-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cadastrar nova compra</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form name="comprasFormulario">
+                            <div class="form-group">
+                                <label>Valor total</label>
+                                <input type="number" class="form-control" id="nome" name="valor" ng-model="compra.valor" placeholder="Digite o valor total da compra" ng-required="true">
+                                <small ng-show="comprasFormulario.valor.$error.required && comprasFormulario.valor.$dirty" class="aviso-nome">O campo valor total deve ser preenchido.</small>
+                            </div>
+                            <div class="form-group">
+                                <label>Comprador</label>
+                                <br>
+                                <select class="custom-select" ng-model="compra.pessoa" ng-options="pessoa.nome for pessoa in pessoas" name="comprador" ng-required="true">
+                                    <option value="">-- Selecione --</option>
+                                </select>
+                                <small ng-show="comprasFormulario.comprador.$error.required && comprasFormulario.comprador.$dirty" class="aviso-nome">O campo comprador deve ser preenchido.</small>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-leia-mais" data-dismiss="modal" ng-disabled="comprasFormulario.$invalid" ng-click="adicionarCompra(compra)">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
